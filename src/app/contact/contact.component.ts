@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChild, Inject } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Feedback, ContactType } from '../shared/feedback';
 import { FeedbackService } from "../service/feedback.service";
-import { visibility, flyInOut, expand } from '../animations/animations';
+import { visibility, flyInOut, expand } from '../animations/app.animation';
 import { throwMatDialogContentAlreadyAttachedError } from '@angular/material/dialog';
 
 @Component({

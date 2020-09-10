@@ -54,13 +54,20 @@ fxLayoutGap="10px">
 </div>
 
 
-<div fxFlex>
-  <mat-list *ngFor="let leader of leaders">
+<div fxFlex >
+  <mat-list *ngFor="let leader of leaders" [@expand]>
       <mat-list-item>
-          <img matListAvatar src="{{leader.image}}">
+          <img matListAvatar src="{{BaseURL + leader.image}}">
           <h2 matLine>{{leader.name}}</h2>
           <h4 matLine>{{leader.designation}}</h4>
           <p matLine>{{leader.description}}</p>
       </mat-list-item>
   </mat-list>
 </div>
+<div [hidden]="leaders">
+  <mat-spinner></mat-spinner><h4>Loading...</h4>
+  </div>
+  <div fxFlex *ngIf="errMess">
+    <h2>Error</h2>
+    <h4>{{errMess}}</h4>
+  </div>
