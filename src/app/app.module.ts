@@ -20,6 +20,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { HttpClientModule } from '@angular/common/http';
 import { baseURL } from './shared/baseurl';
+import {MatSliderModule} from '@angular/material/slider';
 
 import 'hammerjs';
 import { MenuComponent } from './menu/menu.component';
@@ -57,6 +58,7 @@ import { LoginComponent } from "./login/login.component";
     MatCardModule,
     MatDialogModule,
     MatGridListModule,
+    MatSliderModule,
     MatButtonModule,
     MatFormFieldModule, 
     MatInputModule,
